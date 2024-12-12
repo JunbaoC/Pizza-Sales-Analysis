@@ -42,3 +42,36 @@ pizza-sales-analysis/
 │   └── Pizza Sales Analysis.twbx      # Packaged Tableau workbook
 │
 └──README.md                           # Project documentation
+```
+
+## **Key Insights**
+1. **Hourly Order Trends**:
+   - Most orders are placed during **6 PM to 8 PM**, indicating peak dinner hours.
+   - Very few orders are placed late at night or early morning.
+
+2. **Monthly Sales Trends**:
+   - Sales peak in **November and December**, likely due to holiday promotions or seasonal demand.
+   - Steady growth in sales during the first half of the year, with slight dips in off-peak months.
+
+3. **Popular Pizza Categories**:
+   - **Classic pizzas** dominate sales, followed by **Supreme pizzas**.
+   - **Veggie pizzas** show consistent demand among customers with dietary preferences.
+
+4. **Ingredient Preferences**:
+   - The top ingredients include **cheese**, **tomato**, and **pepperoni**, showing a preference for traditional and simple flavors.
+   - Specialty ingredients like **mushrooms** and **chicken** also contribute significantly to sales in their respective categories.
+
+
+## **Visualizations**
+
+### **1. Hourly Order Distribution**
+- **Chart Type**: Bar Chart
+- **Description**:
+  - Displays the total number of orders placed during each hour of the day.
+  - Identifies peak ordering hours to optimize operations like staffing and delivery schedules.
+
+### **2. Monthly Sales Trends**
+- **Chart Type**: Line Chart
+- **Description**:
+  - Visualizes sales revenue and order volume trends over months.
+  - Highlights seasonal variations and sales spikes during holiday periods.
