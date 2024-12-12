@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS pizza_sales (
 ALTER TABLE pizza_sales MODIFY pizza_name VARCHAR(255);
 
 -- Load data from CSV into the table
-LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/Data Model - Pizza Sales.csv'
+LOAD DATA INFILE '/Data Model - Pizza Sales.csv'
 INTO TABLE pizza_sales
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
@@ -141,7 +141,7 @@ SELECT
     HOUR(order_time) AS order_hour,
     COUNT(DISTINCT order_id) AS total_orders,
     SUM(quantity) AS total_quantity
-INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/order_volume_by_hour.csv'
+INTO OUTFILE '/order_volume_by_hour.csv'
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
 LINES TERMINATED BY '\n'
@@ -153,7 +153,7 @@ SELECT
     DATE_FORMAT(order_date, '%Y-%m') AS sales_month,
     SUM(total_price) AS total_sales,
     COUNT(DISTINCT order_id) AS total_orders
-INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/monthly_sales_trends.csv'
+INTO OUTFILE '/monthly_sales_trends.csv'
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"' 
 LINES TERMINATED BY '\n'
